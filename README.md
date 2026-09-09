@@ -1,12 +1,12 @@
-# DoE Education Performance Dashboard — Power BI
+# DoE Education Performance Dashboard : Power BI
 
 An interactive Power BI dashboard built on South African Department of Education (DoE) matric results, covering 9 provinces and their districts. The raw dataset was cleaned and prepared in **Excel** before being loaded into **Power BI**, where DAX measures and five linked report pages were built to turn it into a fully interactive, decision-ready dashboard.
 
 ## 🧹 Workflow
 
-1. **Data cleaning (Excel)** — raw DoE dataset was cleaned: null/missing values handled, columns standardised to correct data types (numbers, text, percentages), and inconsistent province/district naming fixed before loading into Power BI.
-2. **Data modelling (Power BI / DAX)** — custom measures built to calculate pass rates, gender splits, rankings, and contribution percentages, all formatted to two decimal places.
-3. **Dashboard build (Power BI)** — 5 interactive report pages with slicers (Province, District) that filter every visual on a page simultaneously.
+1. **Data cleaning (Excel)** : raw DoE dataset was cleaned: null/missing values handled, columns standardised to correct data types (numbers, text, percentages), and inconsistent province/district naming fixed before loading into Power BI.
+2. **Data modelling (Power BI / DAX)** :custom measures built to calculate pass rates, gender splits, rankings, and contribution percentages, all formatted to two decimal places.
+3. **Dashboard build (Power BI)** : 5 interactive report pages with slicers (Province, District) that filter every visual on a page simultaneously.
 
 ## 📄 Dashboard Pages
 
@@ -19,15 +19,15 @@ Answers Q1, Q3, Q6, Q9 — a clustered column chart of male vs. female enrolment
 - **Key insight found:** males outnumber females in almost every province except Limpopo, which also has the largest age gap.
 
 ### 3. District Performance
-Answers Q2, Q4, Q7 — a bar chart of **Total Bachelors** by district, a ranked table using a **District Rank** DAX measure over **Pass Rate %**, and a table of **Exam Participation %** by district.
+Answers Q2, Q4, Q7 ,a bar chart of **Total Bachelors** by district, a ranked table using a **District Rank** DAX measure over **Pass Rate %**, and a table of **Exam Participation %** by district.
 - **Key insight found:** the top 5 performing districts by pass rate are **Mopani West, Capricorn North, Mopani East, Vhembe East, and Sekhukhune South**.
 
 ### 4. Overall Academic & Gender Performance
-Answers Q5, Q10 — a combo chart plotting **Bachelor Pass Rate %** against **Overall Pass Rate %** by district, and a 100% stacked column chart of **Male %** / **Female %** by district (both built with `DIVIDE()`).
+Answers Q5, Q10 , a combo chart plotting **Bachelor Pass Rate %** against **Overall Pass Rate %** by district, and a 100% stacked column chart of **Male %** / **Female %** by district (both built with `DIVIDE()`).
 - **Key insights found:** districts with a high overall pass rate but comparatively low Bachelor's pass rate are **Mopani West, Mopani East, Capricorn North, and Bohlabela**. For gender balance, **Dr Ruth Segomotsi Mompati** (50.18% M / 49.82% F) and **Ngaka Modiri Molema** (50.21% M / 49.79% F) are the most balanced districts, while **Capricorn North** (46.56% M / 53.44% F) has the largest disparity, with female enrolment exceeding male.
 
 ### 5. Geographic Analysis
-Answers Q11 — a map visual plotting every district, bubble size driven by **Pass Rate %**, coloured/legend by **Province**, with **Pass Rate %, Number Passed, and Number Failed** in the tooltip.
+Answers Q11 , a map visual plotting every district, bubble size driven by **Pass Rate %**, coloured/legend by **Province**, with **Pass Rate %, Number Passed, and Number Failed** in the tooltip.
 - **Key insight found:** performance clusters by province rather than randomly by district — **Limpopo** districts consistently show the largest bubbles (~72.34% average pass rate), led by **Mopani West** and **Capricorn North**; **Mpumalanga** districts cluster lowest (~68.72% average), with **Bohlabela** (66.13%) and **Ehlanzeni** (66.63%) the weakest; **North West** sits in between (~69.85%). This points to shared provincial factors (resourcing, infrastructure, administrative support) driving performance more than purely local conditions.
 
 ## 🧮 DAX Measures Used
